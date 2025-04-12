@@ -6,7 +6,7 @@
 
 ## Questões resolvidas 
 
-[Questão A](#)
+[Questão 01](exercicios/tarefa01-q01.sql)
 
 [Questão B](#)
 
