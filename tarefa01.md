@@ -8,7 +8,7 @@
 
 [Questão 01](exercicios/tarefa01-q01.sql)
 
-[Questão B](#)
+[Questão 04](exercicios/tarefa01-q04.sql)
 
 [Questão C](#)
 
