@@ -14,4 +14,4 @@
 
 [Questão 13](exercicios/tarefa01-q13.sql)
 
-[Questão E](#)
+[Questão 16](exercicios/tarefa01-q16.sql)
