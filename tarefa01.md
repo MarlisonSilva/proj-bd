@@ -10,7 +10,7 @@
 
 [Questão 04](exercicios/tarefa01-q04.sql)
 
-[Questão C](#)
+[Questão 07](exercicios/tarefa01-q07.sql)
 
 [Questão D](#)
 
