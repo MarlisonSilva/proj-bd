@@ -9,13 +9,13 @@ CREATE DATABASE db_company;
 USE db_company;
 
 CREATE TABLE departamento(
-    codigo INT PRIMARY KEY,
+    codigo INT AUTO_INCREMENT PRIMARY KEY,
     descricao VARCHAR(200),
     cod_gerente INT
 );
 
 CREATE TABLE funcionario(
-    codigo INT PRIMARY KEY,
+    codigo INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100),
     sexo CHAR(1),
     dt_nasc DATE,
@@ -27,7 +27,7 @@ CREATE TABLE funcionario(
 ALTER TABLE departamento ADD FOREIGN KEY (cod_gerente) REFERENCES funcionario(codigo);
 
 CREATE TABLE projeto(
-    codigo INT PRIMARY KEY,
+    codigo INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100),
     descricao VARCHAR(200),
     data_inicio DATE,
@@ -39,7 +39,7 @@ CREATE TABLE projeto(
 );
 
 CREATE TABLE atividade(
-    codigo INT PRIMARY KEY,
+    codigo INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(100),
     descricao VARCHAR(200),
     data_inicio DATE,
