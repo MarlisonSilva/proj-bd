@@ -12,6 +12,6 @@
 
 [Questão 07](exercicios/tarefa01-q07.sql)
 
-[Questão D](#)
+[Questão 13](exercicios/tarefa01-q13.sql)
 
 [Questão E](#)
