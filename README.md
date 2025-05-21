@@ -11,3 +11,5 @@ E-mail: marlison.silva.151@ufrn.edu.br
 ## Tarefas
 
 [ABRIR TAREFA01](tarefas/t01/tarefa01.md)
+
+[ABRIR TAREFA DE ORM](tarefas/orm/tarefa-orm.md)
