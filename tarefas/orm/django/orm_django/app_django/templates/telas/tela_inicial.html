@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Página de Teste</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f9fc;
+        text-align: center;
+        padding: 40px;
+      }
+
+      h1 {
+        color: #333;
+        margin-bottom: 30px;
+      }
+
+      .link-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+      }
+
+      .link-container a {
+        display: inline-block;
+        text-decoration: none;
+        background-color: #4a90e2;
+        color: white;
+        padding: 12px 24px;
+        border-radius: 8px;
+        font-weight: bold;
+        transition: background-color 0.3s ease;
+      }
+
+      .link-container a:hover {
+        background-color: #357ab7;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Menu de Ações</h1>
+
+    <div class="link-container">
+      <a href="{% url 'listar_projetos' %}">Listar Projetos</a>
+      <a href="{% url 'atualizar_lider' %}">Atualizar Líder</a>
+      <a href="{% url 'adicionar_atividade' %}">Adicionar Atividade</a>
+    </div>
+  </body>
+</html>

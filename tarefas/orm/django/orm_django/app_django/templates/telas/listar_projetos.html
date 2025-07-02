@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Lista de Projetos</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f2f4f8;
+        margin: 0;
+        padding: 30px;
+      }
+
+      .projeto {
+        background-color: #ffffff;
+        border: 1px solid #d1d9e6;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 25px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+      }
+
+      .projeto h2 {
+        margin-top: 0;
+        color: #2c3e50;
+      }
+
+      .responsavel {
+        font-style: italic;
+        color: #555;
+        margin-bottom: 10px;
+      }
+
+      ul.atividades {
+        list-style-type: disc;
+        padding-left: 20px;
+        margin-top: 10px;
+      }
+
+      ul.atividades li {
+        margin-bottom: 6px;
+      }
+
+      .sem-atividades {
+        color: #999;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Projetos e Atividades</h1>
+
+    {% for projeto in projetos %}
+    <div class="projeto">
+      <h2>{{ projeto.nome }}</h2>
+      <p class="responsavel">
+        Responsável: {% if projeto.responsavel %} {{ projeto.responsavel.nome }}
+        {% else %}
+        <span style="color: red">Sem responsável</span>
+        {% endif %}
+      </p>
+
+      <ul class="atividades">
+        {% for atividade in projeto.atividade_set.all %}
+        <li>
+          {{ atividade.descricao }}<br />
+          <small
+            >({{ atividade.data_inicio }} - {{ atividade.data_fim }})</small
+          >
+        </li>
+        {% empty %}
+        <li class="sem-atividades">Nenhuma atividade cadastrada.</li>
+        {% endfor %}
+      </ul>
+    </div>
+    {% endfor %}
+  </body>
+</html>
